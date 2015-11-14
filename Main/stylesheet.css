@@ -1,0 +1,16 @@
+body
+{
+	background-image: url("mainpage1.jpg");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-attachment: scroll;
+	
+}
+
+h1
+{
+	font-family: Comic Sans;
+	font-size: 28;
+	font-weight: bold;
+	color: RGB(250,100,120);
+}
