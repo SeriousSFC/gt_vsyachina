@@ -36,6 +36,7 @@ function factrec(n)
 f=factrec(x);
 alert(f);
 */
+//Еще один вариант делать строковые комменты
 name = prompt("Введите имя пользователя"," ");
 s = "Дарова, " + name;
 alert (s);
