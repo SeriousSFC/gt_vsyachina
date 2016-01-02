@@ -1,9 +1,13 @@
 body
 {
-	background-image: url("mainpage1.jpg");
+	background-image: url("mainpage2.jpg");
 	background-repeat: no-repeat;
-	background-position: 50% 50%;
+	background-position: 50% 0%;
 	background-attachment: scroll;
+	display: block;
+    width: 98%;
+    padding: 0.5rem;
+	position: relative;
 	
 }
 
