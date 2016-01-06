@@ -6,16 +6,18 @@
 a {
 	text-decoration: none;
 	color: #FFF;
+	transition: 1s linear;
 }
 .logo {
 	float: left;
-	padding-top: 15px;
 	top: 5 px;
-	margin: 10px;
+	margin-top: 28px;
+	margin-left: 12px;
 	height: 70px;
 	width: 70px;
 	border-radius: 15px 15px;
 }
+
 body
 {
 	/*background-image: url("mainpage2.jpg");*/
@@ -48,7 +50,8 @@ img {
 	box-shadow: rgba(0,0,0,0.2) 10px 10px;
 }
 #navbar {
-	background: -webkit-linear-gradient(top, #083857 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /*([<угол> | <позиция> ,] <цвет> [, <цвет>]*);*/
+	background: -webkit-linear-gradient(top, #083857 0%,#0B7FB5 100%); /*([<угол> | <позиция> ,] <цвет> [, <цвет>]*);*/
+	/*background-color: #aaa;*/
 	position:fixed;
 	margin-bottom:10px;
 }
@@ -66,15 +69,16 @@ ul{
 	margin: 0px;
 }
 li {
-	display: inline;
+	display: inline;	
 	/*border: 2px solid #000000;*/
-	font-family: Futura, Tahoma, sans-serif;
+	font-family: Arial, Tahoma, Sans-serif;
 	color: #ffffff;
 	padding: 10px;
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
-	background-color: #083857
+	/*background-color: #083857;*/
 }
+
 #left{
 	width: 45%;
 	float: left;
