@@ -6,7 +6,12 @@
 a {
 	text-decoration: none;
 	color: #FFF;
-	transition: 1s linear;
+	transition: 0.5s linear;
+}
+.button:hover {
+	background: -webkit-linear-gradient(top, #083857 0%,#0B7FB5 100%); /*([<угол> | <позиция> ,] <цвет> [, <цвет>]*);*/
+	
+	
 }
 .logo {
 	float: left;
@@ -50,7 +55,7 @@ img {
 	box-shadow: rgba(0,0,0,0.2) 10px 10px;
 }
 #navbar {
-	background: -webkit-linear-gradient(top, #083857 0%,#0B7FB5 100%); /*([<угол> | <позиция> ,] <цвет> [, <цвет>]*);*/
+	
 	/*background-color: #aaa;*/
 	position:fixed;
 	margin-bottom:10px;
