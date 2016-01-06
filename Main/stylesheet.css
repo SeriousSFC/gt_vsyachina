@@ -9,20 +9,22 @@ a {
 	transition: 0.5s linear;
 }
 .button:hover {
-	background: -webkit-linear-gradient(top, #083857 0%,#0B7FB5 100%); /*([<угол> | <позиция> ,] <цвет> [, <цвет>]*);*/
-	
-	
+	background: -webkit-linear-gradient(top, #083857 0%,#0B7FB5 100%); /*([<угол> | <позиция> ,] <цвет> [, <цвет>]*);*/	
 }
 .logo {
 	float: left;
-	top: 5 px;
-	margin-top: 28px;
+	margin-top: 10px;
+	margin-right: 12px;
 	margin-left: 12px;
+	margin-bottom: 12px;	
 	height: 70px;
 	width: 70px;
 	border-radius: 15px 15px;
 }
-
+.page {
+    width: 1000px;
+    margin: 0 auto;
+}
 body
 {
 	/*background-image: url("mainpage2.jpg");*/
@@ -56,11 +58,12 @@ img {
 }
 #navbar {
 	
-	/*background-color: #aaa;*/
+	/*background-color: #aaa;*/	
 	position:fixed;
 	margin-bottom:10px;
 }
 #header {	
+	
 	position: relative;
 	background-color: #083857;
 	height: 110px;
@@ -69,6 +72,7 @@ img {
 	border-bottom: 1px;
 }
 ul{
+	padding-top: 10px; /* Кнопки навигации опущены */
 	list-style-type: none;
 	position: fixed;
 	margin: 0px;
@@ -104,10 +108,7 @@ table {
 	border-bottom-right-radius: 15px;
 	border-bottom-left-radius: 15px;
 }
-td {
-	height: 75px;
-	width: 75px;
-}
+
 td img {
 	height: 75px;
 	width: 75px;
