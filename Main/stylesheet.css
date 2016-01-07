@@ -85,9 +85,13 @@ li {
 	width: 45%;
 	float: left;
 }
-input{
+input.search{
 	position: absolute;
 	right: 40px;
+	color: rgb(255, 255, 255); 
+	border: 2px solid rgb(100, 117, 134); 
+	padding: 2px 2px 2px 30px;
+	background: url(images/search.png) no-repeat scroll 5% 50% rgb(68, 85, 102);	 
 }
 p {
 	font-family: Tahoma;
