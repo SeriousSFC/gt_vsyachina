@@ -269,7 +269,7 @@ a.back{
 	background:#fff;
 }
 .form_wrapper .column{
-	width:47%;
+	
 	float:left;
 }
 form.active{
@@ -279,10 +279,10 @@ form.login{
 	width:350px;
 }
 form.register{
-	width:550px;
+	width:350px;
 }
-form.forgot_password{
-	width:300px;
+form.tracking{
+	width:350px;
 }
 .form_wrapper a{
 	text-decoration:none;
@@ -305,7 +305,6 @@ form.forgot_password{
 	padding: 9px;
 	display:block;
 	font-size:16px;
-	width:76%;
 	background: 
 		-webkit-gradient(
 			linear,
