@@ -4,10 +4,7 @@
 		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>	
 		<!-- <meta charset="windows-1251"> -->
 		<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">		
-		<title>ГБР-Краснодар</title>
-		<!--ДЛя
-		<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.js"></script>  
-		карусели 1-->
+		<title>ГБР-Краснодар</title>		
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
 		<style>
 			section{ <!-- в секцию вложить главную колонку -->
@@ -32,56 +29,117 @@
 				</ul>		
 		<h2 align="center"> Добро пожаловать на сайт Городского бюро заказов города Краснодар</h2>
 	</div>
-	<!--Карусель 2-->
-	<div class="main_view">
-<div class="window">
-<div class="image_reel">
-<a href="#"><img src="reel_1.jpg" alt="" /></a>
-<a href="#"><img src="reel_2.jpg" alt="" /></a>
-<a href="#"><img src="reel_3.jpg" alt="" /></a>
-<a href="#"><img src="reel_4.jpg" alt="" /></a>
-</div>
-</div>
-<div class="paging">
-<a href="#" rel="1">1</a>
-<a href="#" rel="2">2</a>
-<a href="#" rel="3">3</a>
-<a href="#" rel="4">4</a>
-</div>
-</div>
-	
-	
-	<!--
-		<div id="carusel" style="border:solid;width:1000px;overflow:auto">
-			<div id="scrolled">   
-				<img src="#" width="1000px" height="200px" style="background-color:green;float:left;" alt="image 0">
-				<img src="#" width="1000px" height="200px" style="background-color:yellow;float:left;" alt="image 1">
-				<img src="#" width="1000px" height="200px" style="background-color:blue;float:left;" alt="image 2">
-				<img src="#" width="1000px" height="200px" style="background-color:red;float:left;" alt="image 3">
-			</div>  
-		</div>		
+<!--Карусель 2-->
+		<div class="main_view">
+			<div class="window">
+				<div class="image_reel">
+					<a href="#"><img src="reel_1.jpg" alt="" /></a>
+					<a href="#"><img src="reel_2.jpg" alt="" /></a>
+					<a href="#"><img src="reel_3.jpg" alt="" /></a>
+					<a href="#"><img src="reel_4.jpg" alt="" /></a>
+				</div>
+			</div>
+			<div class="paging">
+				<a href="#" rel="1"> </a>
+				<a href="#" rel="2"> </a>
+				<a href="#" rel="3"> </a>
+				<a href="#" rel="4"> </a>
+			</div>
+		</div>	
+<!--Текст-->
 	<div class="page">
-		Карусель-->
-		<!--Форма-->
-		<form name="forma1"> 
-			<table border="0" cellspacing="5" cellpadding="5">
-				<tbody>
-					<tr>
-						<td align="right" valign="top">Логин</td>
-						<td><input type="text" name="name" size="25"></td>
-					</tr>
-					<tr>
-						<td align="right" valign="top">E-mail</td>
-						<td><input type="text" name="e-mail" size="25"></td>
-					</tr>
-					<tr>
-						<td align="right" valign="top">Пароль</td>
-						<td><input type="password" name="password" size="25"></td>
-					</tr>
-				</tbody>
-			</table>
-		</form>
 		<p>Тут картинку и описание деятельности.</p>
+		<p>Ниже идет форма<v>
+<!--Форма регистрации-->
+		<div id="form_wrapper" class="form_wrapper">
+			<form class="register">
+				<h3>Регистрация</h3>
+				<div class="column">
+					<div>
+						<label>Имя:</label>
+						<input type="text" />
+					</div>
+					<div>
+						<label>Фамилия:</label>
+						<input type="text" />
+					</div>
+					<div>
+						<label>Сайт:</label>
+						<input type="text" value="http://"/>
+					</div>
+				</div>
+				<div class="column">
+					<div>
+						<label>Имя пользователя:</label>
+						<input type="text"/>
+					</div>
+					<div>
+						<label>Email:</label>
+						<input type="text" />
+					</div>
+					<div>
+						<label>Пароль:</label>
+						<input type="password" />
+					</div>
+				</div>
+				<div class="bottom">
+					<div class="remember">
+						<input type="checkbox" />
+					</div>
+					<input type="submit" value="Зарегистрироваться" />
+					<a href="index.html" rel="login" class="linkform">
+						Вы уже зарегистрировались? Войдите здесь
+					</a>
+					<div class="clear"></div>
+				</div>
+			</form>
+		</div>
+<!--Форма входа-->
+		<form class="login active">
+			<h3>Вход</h3>
+			<div>
+				<label>Имя пользователя:</label>
+				<input type="text" />
+			</div>
+			<div>
+				<label>
+					Пароль: 
+					<a href="forgot_password.html" rel="forgot_password" class="forgot linkform">
+						Забыли пароль?
+					</a>
+				</label>
+				<input type="password" />
+			</div>
+			<div class="bottom">
+				<div class="remember">
+					<input type="checkbox" />
+					<span>Оставаться в системе</span>
+				</div>
+				<input type="submit" value="Войти"></input>
+				<a href="register.html" rel="register" class="linkform">
+					Вы еще не зарегистрировались? Присоединяйтесь
+				</a>
+				<div class="clear"></div>
+			</div>
+		</form>
+<!--Форма восстановления пароля-->
+		<form class="forgot_password">
+			<h3>Восстановление пароля</h3>
+			<div>
+				<label>Имя пользователя или Email:</label>
+				<input type="text" />
+			</div>
+			<div class="bottom">
+				<input type="submit" value="Отправить пароль"></input>
+				<a href="index.html" rel="login" class="linkform">
+					Вдруг вспомнили пароль? Войдите здесь
+				</a>
+				<a href="register.html" rel="register" class="linkform">
+					Вы еще не зарегистрировались? Присоединяйтесь
+				</a>
+				<div class="clear"></div>
+			</div>
+		</form>
 		<div id="right">
 		<table>
 			<tbody>
