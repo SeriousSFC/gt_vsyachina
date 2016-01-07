@@ -21,7 +21,7 @@
 					</li>					
 					<li class="button">Отслеживание отправлений</li>
 					<li class="button">
-						<a href="#">Контакты</a>
+						<a href="#">Сотрудничество</a>  <!-- Или перевозчики?-->
 					</li>
 					<li class="button">
 						<a href="http://vk.com" target="_blank">О компании</a><!-- откроется в новой вкладке-->
@@ -50,99 +50,97 @@
 			</div>
 		</div>	
 <!--Текст-->
-	<div class="page">
+<div class="page">
+	<div class="page-column">
 		<p>Тут картинку и описание деятельности.</p>
 		<p>Ниже идет форма<v>
 <!--Форма регистрации-->
-		<div id="form_wrapper" class="form_wrapper">
-			<form class="register">
-				<h3>Регистрация</h3>
-				<div class="column">
-					<div>
-						<label>Имя:</label>
-						<input type="text" />
-					</div>
-					<div>
-						<label>Фамилия:</label>
-						<input type="text" />
-					</div>
-					<div>
-						<label>Сайт:</label>
-						<input type="text" value="http://"/>
-					</div>
+		<div class="content">
+				<div id="form_wrapper" class="form_wrapper">
+					<form class="register">
+						<h3>Регистрация</h3>
+						<div class="column">
+							<div>
+								<label>Имя:</label>
+								<input type="text" />
+								<span class="error">Ошибка</span>
+							</div>
+							<div>
+								<label>Фамилия:</label>
+								<input type="text" />
+								<span class="error">Ошибка</span>
+							</div>
+							<div>
+								<label>Сайт:</label>
+								<input type="text" value="http://"/>
+								<span class="error">Ошибка</span>
+							</div>
+						</div>
+						<div class="column">
+							<div>
+								<label>Имя пользователя:</label>
+								<input type="text"/>
+								<span class="error">Ошибка</span>
+							</div>
+							<div>
+								<label>Email:</label>
+								<input type="text" />
+								<span class="error">Ошибка</span>
+							</div>
+							<div style="inline">
+								<label>Пароль:</label>
+								<input type="password" />
+								<span class="error">Ошибка</span>
+							</div>
+						</div>
+						<div class="bottom">
+							<div class="remember">
+								<input type="checkbox" />
+								<span>Отправлять мне обновления</span>
+							</div>
+							<input type="submit" value="Зарегистрироваться" />
+							<a href="index.html" rel="login" class="linkform">Вы уже зарегистрировались? Войдите здесь</a>
+							<div class="clear"></div>
+						</div>
+					</form>
+					<form class="login active">
+						<h3>Вход</h3>
+						<div>
+							<label>Имя пользователя:</label>
+							<input type="text" />
+							<span class="error">Ошибка</span>
+						</div>
+						<div>
+							<label>Пароль: <a href="forgot_password.html" rel="forgot_password" class="forgot linkform">Забыли пароль?</a></label>
+							<input type="password" />
+							<span class="error">Ошибка</span>
+						</div>
+						<div class="bottom">
+							<div class="remember"><input type="checkbox" /><span>Оставаться в системе</span></div>
+							<input type="submit" value="Войти"></input>
+							<a href="register.html" rel="register" class="linkform">Вы еще не зарегистрировались? Присоединяйтесь</a>
+							<div class="clear"></div>
+						</div>
+					</form>
+					<form class="forgot_password">
+						<h3>Восстановление пароля</h3>
+						<div>
+							<label>Имя пользователя или Email:</label>
+							<input type="text" />
+							<span class="error">Ошибка</span>
+						</div>
+						<div class="bottom">
+							<input type="submit" value="Отправить пароль"></input>
+							<a href="index.html" rel="login" class="linkform">Вдруг вспомнили пароль? Войдите здесь</a>
+							<a href="register.html" rel="register" class="linkform">Вы еще не зарегистрировались? Присоединяйтесь</a>
+							<div class="clear"></div>
+						</div>
+					</form>
 				</div>
-				<div class="column">
-					<div>
-						<label>Имя пользователя:</label>
-						<input type="text"/>
-					</div>
-					<div>
-						<label>Email:</label>
-						<input type="text" />
-					</div>
-					<div>
-						<label>Пароль:</label>
-						<input type="password" />
-					</div>
-				</div>
-				<div class="bottom">
-					<div class="remember">
-						<input type="checkbox" />
-					</div>
-					<input type="submit" value="Зарегистрироваться" />
-					<a href="index.html" rel="login" class="linkform">
-						Вы уже зарегистрировались? Войдите здесь
-					</a>
-					<div class="clear"></div>
-				</div>
-			</form>
+				<div class="clear"></div>
+			</div>
 		</div>
-<!--Форма входа-->
-		<form class="login active">
-			<h3>Вход</h3>
-			<div>
-				<label>Имя пользователя:</label>
-				<input type="text" />
-			</div>
-			<div>
-				<label>
-					Пароль: 
-					<a href="forgot_password.html" rel="forgot_password" class="forgot linkform">
-						Забыли пароль?
-					</a>
-				</label>
-				<input type="password" />
-			</div>
-			<div class="bottom">
-				<div class="remember">
-					<input type="checkbox" />
-					<span>Оставаться в системе</span>
-				</div>
-				<input type="submit" value="Войти"></input>
-				<a href="register.html" rel="register" class="linkform">
-					Вы еще не зарегистрировались? Присоединяйтесь
-				</a>
-				<div class="clear"></div>
-			</div>
-		</form>
-<!--Форма восстановления пароля-->
-		<form class="forgot_password">
-			<h3>Восстановление пароля</h3>
-			<div>
-				<label>Имя пользователя или Email:</label>
-				<input type="text" />
-			</div>
-			<div class="bottom">
-				<input type="submit" value="Отправить пароль"></input>
-				<a href="index.html" rel="login" class="linkform">
-					Вдруг вспомнили пароль? Войдите здесь
-				</a>
-				<a href="register.html" rel="register" class="linkform">
-					Вы еще не зарегистрировались? Присоединяйтесь
-				</a>
-				<div class="clear"></div>
-			</div>
-		</form>
+<!--Таблица и футер-->		
 		<div id="right">
 		<table>
 			<tbody>
@@ -178,7 +176,9 @@
 				</ul>
 			</div>			
 		</div>
-	</div>
+</div>
+	
+	
 		<div id="footer">
 			<div id="button">
 				<p>Send me an <span class="bold">e-mail</span>!</p>
