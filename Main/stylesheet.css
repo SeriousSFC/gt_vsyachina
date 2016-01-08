@@ -247,6 +247,7 @@ a.back{
 }
 /* Стиль формы */
 .form_wrapper{	
+	float:left;
 	background:#fff;
 	border:1px solid #ddd;
 	margin:0 auto;
