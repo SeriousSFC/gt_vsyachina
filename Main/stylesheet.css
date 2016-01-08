@@ -58,8 +58,7 @@ h2 {
 	text-align: center;
 	padding-top: 15px;
 	padding-bottom: 13px;
-	color: #FFFFFF;
-	padding-left: 5px;
+	color: #FFFFFF;	
 }
 
 #navbar {
@@ -96,6 +95,10 @@ li {
 #left{
 	width: 45%;
 	float: left;
+}
+#q {
+	
+	width:400px;
 }
 input.search{
 	position: absolute;
@@ -264,6 +267,7 @@ a.back{
 	color:#fff;
 	font-size:25px;
 	border-bottom:1px solid #ddd;
+	text-shadow: initial;
 }
 .form_wrapper form{
 	display:none;
@@ -302,7 +306,8 @@ form.tracking{
 .form_wrapper input[type="password"]{
 	border: solid 1px #E5E5E5;
 	background: #FFFFFF;
-	margin: 5px 30px 0px 30px;
+	width: 265px;
+	margin: 5px 10px 20px 30px;
 	padding: 9px;
 	display:block;
 	font-size:16px;
@@ -315,13 +320,6 @@ form.tracking{
 			color-stop(4%, #EEEEEE),
 			to(#FFFFFF)
 		);
-	background: 
-		-moz-linear-gradient(
-			top,
-			#FFFFFF,
-			#EEEEEE 1px,
-			#FFFFFF 25px
-			);
 	-moz-box-shadow: 0px 0px 8px #f0f0f0;
 	-webkit-box-shadow: 0px 0px 8px #f0f0f0;
 	box-shadow: 0px 0px 8px #f0f0f0;
@@ -348,13 +346,12 @@ form.tracking{
 }
 .form_wrapper a.forgot{
 	float:right;
-	font-style:italic;
-	line-height:24px;
-	color:#ffa800;
-	text-shadow:1px 1px 1px #fff;
+	font-size:25px;
+	color:#fff;
+	
 }
 .form_wrapper a.forgot:hover{
-	color:#000;
+	text-shadow:1px 1px 1px #000;
 }
 .form_wrapper div.remember{
 	float:left;
