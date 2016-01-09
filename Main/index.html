@@ -33,113 +33,134 @@
 		<h2> Добро пожаловать на сайт Городского бюро заказов города Краснодар</h2>
 	</div>
 <!--Карусель-->
-		<div class="main_view">
-			<div class="window">
-				<div class="image_reel">
-					<a href="#"><img src="reel_1.jpg" alt="" /></a>
-					<a href="#"><img src="reel_2.jpg" alt="" /></a>
-					<a href="#"><img src="reel_3.jpg" alt="" /></a>
-					<a href="#"><img src="reel_4.jpg" alt="" /></a>
-				</div>
+	<div class="main_view">
+		<div class="window">
+			<div class="image_reel">
+				<a href="#"><img src="reel_1.jpg" alt="" /></a>
+				<a href="#"><img src="reel_2.jpg" alt="" /></a>
+				<a href="#"><img src="reel_3.jpg" alt="" /></a>
+				<a href="#"><img src="reel_4.jpg" alt="" /></a>
 			</div>
-			<div class="paging">
-				<a href="#" rel="1"> </a>
-				<a href="#" rel="2"> </a>
-				<a href="#" rel="3"> </a>
-				<a href="#" rel="4"> </a>
-			</div>
-		</div>	
+		</div>
+		<div class="paging">
+			<a href="#" rel="1"> </a>
+			<a href="#" rel="2"> </a>
+			<a href="#" rel="3"> </a>
+			<a href="#" rel="4"> </a>
+		</div>
+	</div>	
 <!--Текст-->
-<div class="page">
-	<div class="page-column">		
+	<div class="page">
+		<div class="page-column">		
 <!--Форма регистрации-->
-		<div class="content">
-				<div id="form_wrapper" class="form_wrapper">
-					<form class="register">
-						<h3>Регистрация</h3>						
+			<div class="content">
+					<div id="form_wrapper" class="form_wrapper">
+						<form class="register">
+							<h3>Регистрация</h3>						
+								<div>
+									<label>Имя пользователя:</label>
+									<input type="text" />
+									<span class="error">Ошибка</span>
+								</div>
+								<div>
+									<label>Ваш действущий e-mail:</label>
+									<input type="text" />
+									<span class="error">Ошибка</span>
+								</div>
+								<div style="inline">
+									<label>Пароль:</label>
+									<input type="password" />
+									<span class="error">Ошибка</span>
+								</div>						
+							<div class="bottom">
+								<div class="remember">
+									<input type="checkbox" />
+									<span>Отправлять мне обновления</span>
+								</div>
+								<input type="submit" value="Зарегистрироваться" />
+								<a href="index.html" rel="login" class="linkform">Вы уже зарегистрировались? Войдите здесь</a>
+								<div class="clear"></div>
+							</div>
+						</form>
+						<form class="login active">
+							<ul id="enter">
+								<li class="button">Вход  </li>	
+								<li class="button"><a href="forgot_password.html"  rel="tracking" class="forgot linkform">Отслеживание отправлений</a></li>
+							</ul>
+						
 							<div>
 								<label>Имя пользователя:</label>
 								<input type="text" />
 								<span class="error">Ошибка</span>
 							</div>
 							<div>
-								<label>Ваш действущий e-mail:</label>
-								<input type="text" />
-								<span class="error">Ошибка</span>
-							</div>
-							<div style="inline">
 								<label>Пароль:</label>
 								<input type="password" />
 								<span class="error">Ошибка</span>
-							</div>						
-						<div class="bottom">
-							<div class="remember">
-								<input type="checkbox" />
-								<span>Отправлять мне обновления</span>
 							</div>
-							<input type="submit" value="Зарегистрироваться" />
-							<a href="index.html" rel="login" class="linkform">Вы уже зарегистрировались? Войдите здесь</a>
-							<div class="clear"></div>
-						</div>
-					</form>
-					<form class="login active">
-						<ul id="enter">
-							<li class="button">Вход  </li>	
-							<li class="button"><a href="forgot_password.html"  rel="tracking" class="forgot linkform">Отслеживание отправлений</a></li>
-						</ul>
+							<div class="bottom">
+								<div class="remember"><input type="checkbox" /><span>Оставаться в системе</span></div>
+								<input type="submit" value="Войти"></input>
+								<a href="register.html" rel="register" class="linkform">Вы еще не зарегистрировались? Присоединяйтесь</a>
+								<div class="clear"></div>
+							</div>
+						</form>
+						<form class="tracking"> 
+							<h3>Отслеживание отправлений</h3>
+							<div>
+								<label>Идентификатор отправления:</label>
+								<input type="text" />
+								<span class="error">Ошибка</span>
+							</div>
+							<div class="bottom">
+								<input type="submit" value="Найти"></input>
+								<a href="index.html" rel="login" class="linkform">Вдруг вспомнили пароль? Войдите здесь</a>
+								<a href="register.html" rel="register" class="linkform">Вы еще не зарегистрировались? Присоединяйтесь</a>
+								<div class="clear"></div>
+							</div>
+						</form>
 					
-						<div>
-							<label>Имя пользователя:</label>
-							<input type="text" />
-							<span class="error">Ошибка</span>
+					</div>
+						<div class="about">
+						 <h3> О нас </h3>
+							
 						</div>
-						<div>
-							<label>Пароль:</label>
-							<input type="password" />
-							<span class="error">Ошибка</span>
-						</div>
-						<div class="bottom">
-							<div class="remember"><input type="checkbox" /><span>Оставаться в системе</span></div>
-							<input type="submit" value="Войти"></input>
-							<a href="register.html" rel="register" class="linkform">Вы еще не зарегистрировались? Присоединяйтесь</a>
-							<div class="clear"></div>
-						</div>
-					</form>
-					<form class="tracking"> 
-						<h3>Отслеживание отправлений</h3>
-						<div>
-							<label>Идентификатор отправления:</label>
-							<input type="text" />
-							<span class="error">Ошибка</span>
-						</div>
-						<div class="bottom">
-							<input type="submit" value="Найти"></input>
-							<a href="index.html" rel="login" class="linkform">Вдруг вспомнили пароль? Войдите здесь</a>
-							<a href="register.html" rel="register" class="linkform">Вы еще не зарегистрировались? Присоединяйтесь</a>
-							<div class="clear"></div>
-						</div>
-					</form>
+					<div class="clear"></div>
+					
 				</div>
-				<div class="clear"></div>
+			
 			</div>
-		</div>
-		<div class="about">
-		
-		</div>
+			
 <!--Таблица и футер	-->		
-</div>
+	</div>
+	<div id="end">
+		<section id="bottom_left">
+		<p> Наша компания на карте</p>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2817.3993892800354!2d38.98797333488426!3d45.077693554670724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x4698f2b4ca0f9491!2z0JHQntCg0JXQpiwg0JrQvtC80L_RgNC10YHRgdC-0YDQvdGL0Lkg0LfQsNCy0L7QtA!5e0!3m2!1sru!2sru!4v1452293677001" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			
+		</section>			
+		<section id="bottom_right">	
+			<ul class="contact">
+				<li id="bord">
+					<h3 id="bord">Юридический адрес:</h3>
+					<span>350000 Ростовское ш., 14/2<br />
+					г. Краснодар, Россия.</span>
+				</li>
+				<li>
+					<h3>Email</h3>
+					<a href="#">gbr-krasnodar@krd.ru</a>
+				</li>
+				<li>
+					<h3>Телефон</h3>
+					<span>(861) 123-4567</span>
+				</li>										
+			</ul>
+		</section>
+	</div>
+	
 	<div id="footer">
-		<table>
-			<tbody>
-				<tr>
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2817.3993892800354!2d38.98797333488426!3d45.077693554670724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x4698f2b4ca0f9491!2z0JHQntCg0JXQpiwg0JrQvtC80L_RgNC10YHRgdC-0YDQvdGL0Lkg0LfQsNCy0L7QtA!5e0!3m2!1sru!2sru!4v1452293677001" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-				</tr>
-				<tr>
-					<p>Send me an <span class="bold">e-mail</span>!</p>
-					<address> Ленинский пр., д.2 </address>	
-				</tr>
-			</tbody>
-		</table>
+			<p>Send me an <span class="bold">e-mail</span>!</p>
+			<address> Ленинский пр., д.2 </address>	
 	</div>
 				
 		<script src="javascript.js"></script>	
